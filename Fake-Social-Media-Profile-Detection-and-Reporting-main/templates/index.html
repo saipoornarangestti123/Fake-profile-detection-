@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Platform</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/premium-photo/hacker-hacking-laptop-desktop-background-wallpaper-generative-ai_635062-1832.jpg'); 
+            text-align: center;
+            background-size:cover;
+            padding-top: 50px;
+            margin: 0;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Platform </h1>
+    <button onclick="redirectTo('insta')">Instagram</button>
+    <button onclick="redirectTo('twitter')">Twitter</button>
+
+    <script>
+        function redirectTo(platform) {
+            if (platform === 'insta') {
+                window.location.href = '/insta';
+            } else if (platform === 'twitter') {
+                window.location.href = '/twitter';
+            }
+        }
+    </script>
+
+    <footer>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </footer>
+</body>
+</html>

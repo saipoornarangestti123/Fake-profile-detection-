@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>	Instagram Account Detection</title>
+    <center>
+        <center>
+            <h1 style="font-family: Verdana, sans-serif; font-size: 50px; color:white;" >Instagram Account Detection</h1>
+          </center>
+          
+      
+    <style>
+        body {
+            background-color: #f0f0f0;
+            background-image: url('https://e0.pxfuel.com/wallpapers/328/501/desktop-wallpaper-hacker-hacking-hack-anarchy-virus-internet-computer-sadic-anonymous-dark-and-mobile-background.jpg'); 
+            background-size:cover;
+            font-family: Arial, sans-serif;
+            animation: fadeIn 2s ease;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(9, 9, 9, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1s ease;
+        }
+        
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .form-container h1 {
+            font-size: 50px;
+            text-align: center;
+            color: #af4c4c;
+            animation: pulse 1s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+        
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            color: #faf6f6;
+            transition: color 0.3s ease;
+        }
+        
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #af4c4c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        /* Hover effect */
+        .form-container input[type="submit"]:hover {
+            background-color: #962424;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <title>Instagram Account Detection</title>
+</head>
+<body>
+   
+    
+    <form action="/insta_predict" method="post">
+        <!-- Add input fields corresponding to your features -->
+
+
+        <label for="profile_pic">Profile Picture (1 for Yes, 0 for No): </label>
+        <input type="text" name="profile_pic" required><br>
+
+        <label for="nums_length_username">Number-to-Length Ratio in Username: </label>
+        <input type="text" name="nums_length_username" required><br>
+
+        <label for="fullname_words">Number of Words in Full Name: </label>
+        <input type="text" name="fullname_words" required><br>
+
+        <label for="nums_length_fullname">Number-to-Length Ratio in Full Name: </label>
+        <input type="text" name="nums_length_fullname" required><br>
+
+        <label for="name_eq_username">Name equals Username (1 for Yes, 0 for No): </label>
+        <input type="text" name="name_eq_username" required><br>
+
+        <label for="description_length">Description Length: </label>
+        <input type="text" name="description_length" required><br>
+
+        <label for="external_URL">External URL (1 for Yes, 0 for No): </label>
+        <input type="text" name="external_URL" required><br>
+
+        <label for="num_posts">Number of Posts: </label>
+        <input type="text" name="num_posts" required><br>
+
+        <label for="num_followers">Number of Followers: </label>
+        <input type="text" name="num_followers" required><br>
+
+        <label for="num_follows">Number of Follows: </label>
+        <input type="text" name="num_follows" required><br>
+
+        <label for="account_private">Account is Private (1 for Yes, 0 for No): </label>
+        <input type="text" name="account_private" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+    </body>
+    </div>
+</body>
+</html>
